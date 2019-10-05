@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schedule table</title>
+    <script src="__PUBLIC__/static/lib/jquery-3.1.4.js"></script>
+    <link href="__PUBLIC__/static/styles/bootstrap.min.css" rel="stylesheet">
+    <script src="__PUBLIC__/static/lib/bootstrap.min.js"></script>
+    <link href="__PUBLIC__/static/styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <p class="navbar-text">Signed in as <span class="user-name">Zero member</span></p>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    User's name <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- 主体 -->
+    <article class="table-wall">
+        <!-- 无课表 -->
+        <table class="table-bordered">
+            <tr>
+                <th></th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thur</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td>1st</td>
+                <td id="a_1"></td>
+                <td id="a_2"></td>
+                <td id="a_3"></td>
+                <td id="a_4"></td>
+                <td id="a_5"></td>
+                <td id="a_6"></td>
+                <td id="a_7"></td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11th</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- 课程表 -->
+        <article class="to-fill-table">
+            <div class="header-container">
+                <ul class="table-header">
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thur</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-1">
+                    <li>1st</li>
+                    <li><input type="checkbox" id="a-1" value="a-1"><label for="a-1"></label></li>
+                    <li><input type="checkbox" id="b-1" value="b-1"><label for="b-1"></label></li>
+                    <li><input type="checkbox" id="c-1" value="c-1"><label for="c-1"></label></li>
+                    <li><input type="checkbox" id="d-1" value="d-1"><label for="d-1"></label></li>
+                    <li><input type="checkbox" id="e-1" value="e-1"><label for="e-1"></label></li>
+                    <li><input type="checkbox" id="f-1" value="f-1"><label for="f-1"></label></li>
+                    <li><input type="checkbox" id="g-1" value="g-1"><label for="g-1"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-2">
+                    <li>2nd</li>
+                    <li><input type="checkbox" id="a-2" value="a-2"><label for="a-2"></label></li>
+                    <li><input type="checkbox" id="b-2" value="b-2"><label for="b-2"></label></li>
+                    <li><input type="checkbox" id="c-2" value="c-2"><label for="c-2"></label></li>
+                    <li><input type="checkbox" id="d-2" value="d-2"><label for="d-2"></label></li>
+                    <li><input type="checkbox" id="e-2" value="e-2"><label for="e-2"></label></li>
+                    <li><input type="checkbox" id="f-2" value="f-2"><label for="f-2"></label></li>
+                    <li><input type="checkbox" id="g-2" value="g-2"><label for="g-2"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-3">
+                    <li>3rd</li>
+                    <li><input type="checkbox" id="a-3" value="a-3"><label for="a-3"></label></li>
+                    <li><input type="checkbox" id="b-3" value="b-3"><label for="b-3"></label></li>
+                    <li><input type="checkbox" id="c-3" value="c-3"><label for="c-3"></label></li>
+                    <li><input type="checkbox" id="d-3" value="d-3"><label for="d-3"></label></li>
+                    <li><input type="checkbox" id="e-3" value="e-3"><label for="e-3"></label></li>
+                    <li><input type="checkbox" id="f-3" value="f-3"><label for="f-3"></label></li>
+                    <li><input type="checkbox" id="g-3" value="g-3"><label for="g-3"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-4">
+                    <li>4th</li>
+                    <li><input type="checkbox" id="a-4" value="a-4"><label for="a-4"></label></li>
+                    <li><input type="checkbox" id="b-4" value="b-4"><label for="b-4"></label></li>
+                    <li><input type="checkbox" id="c-4" value="c-4"><label for="c-4"></label></li>
+                    <li><input type="checkbox" id="d-4" value="d-4"><label for="d-4"></label></li>
+                    <li><input type="checkbox" id="e-4" value="e-4"><label for="e-4"></label></li>
+                    <li><input type="checkbox" id="f-4" value="f-4"><label for="f-4"></label></li>
+                    <li><input type="checkbox" id="g-4" value="g-4"><label for="g-4"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-5">
+                    <li>5th</li>
+                    <li><input type="checkbox" id="a-5" value="a-5"><label for="a-5"></label></li>
+                    <li><input type="checkbox" id="b-5" value="b-5"><label for="b-5"></label></li>
+                    <li><input type="checkbox" id="c-5" value="c-5"><label for="c-5"></label></li>
+                    <li><input type="checkbox" id="d-5" value="d-5"><label for="d-5"></label></li>
+                    <li><input type="checkbox" id="e-5" value="e-5"><label for="e-5"></label></li>
+                    <li><input type="checkbox" id="f-5" value="f-5"><label for="f-5"></label></li>
+                    <li><input type="checkbox" id="g-5" value="g-5"><label for="g-5"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-6">
+                    <li>6th</li>
+                    <li><input type="checkbox" id="a-6" value="a-6"><label for="a-6"></label></li>
+                    <li><input type="checkbox" id="b-6" value="b-6"><label for="b-6"></label></li>
+                    <li><input type="checkbox" id="c-6" value="c-6"><label for="c-6"></label></li>
+                    <li><input type="checkbox" id="d-6" value="d-6"><label for="d-6"></label></li>
+                    <li><input type="checkbox" id="e-6" value="e-6"><label for="e-6"></label></li>
+                    <li><input type="checkbox" id="f-6" value="f-6"><label for="f-6"></label></li>
+                    <li><input type="checkbox" id="g-6" value="g-6"><label for="g-6"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-7">
+                    <li>7th</li>
+                    <li><input type="checkbox" id="a-7" value="a-7"><label for="a-7"></label></li>
+                    <li><input type="checkbox" id="b-7" value="b-7"><label for="b-7"></label></li>
+                    <li><input type="checkbox" id="c-7" value="c-7"><label for="c-7"></label></li>
+                    <li><input type="checkbox" id="d-7" value="d-7"><label for="d-7"></label></li>
+                    <li><input type="checkbox" id="e-7" value="e-7"><label for="e-7"></label></li>
+                    <li><input type="checkbox" id="f-7" value="f-7"><label for="f-7"></label></li>
+                    <li><input type="checkbox" id="g-7" value="g-7"><label for="g-7"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-8">
+                    <li>8th</li>
+                    <li><input type="checkbox" id="a-8" value="a-8"><label for="a-8"></label></li>
+                    <li><input type="checkbox" id="b-8" value="b-8"><label for="b-8"></label></li>
+                    <li><input type="checkbox" id="c-8" value="c-8"><label for="c-8"></label></li>
+                    <li><input type="checkbox" id="d-8" value="d-8"><label for="d-8"></label></li>
+                    <li><input type="checkbox" id="e-8" value="e-8"><label for="e-8"></label></li>
+                    <li><input type="checkbox" id="f-8" value="f-8"><label for="f-8"></label></li>
+                    <li><input type="checkbox" id="g-8" value="g-8"><label for="g-8"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-9">
+                    <li>9th</li>
+                    <li><input type="checkbox" id="a-9" value="a-9"><label for="a-9"></label></li>
+                    <li><input type="checkbox" id="b-9" value="b-9"><label for="b-9"></label></li>
+                    <li><input type="checkbox" id="c-9" value="c-9"><label for="c-9"></label></li>
+                    <li><input type="checkbox" id="d-9" value="d-9"><label for="d-9"></label></li>
+                    <li><input type="checkbox" id="e-9" value="e-9"><label for="e-9"></label></li>
+                    <li><input type="checkbox" id="f-9" value="f-9"><label for="f-9"></label></li>
+                    <li><input type="checkbox" id="g-9" value="g-9"><label for="g-9"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-10">
+                    <li>10th</li>
+                    <li><input type="checkbox" id="a-10" value="a-10"><label for="a-10"></label></li>
+                    <li><input type="checkbox" id="b-10" value="b-10"><label for="b-10"></label></li>
+                    <li><input type="checkbox" id="c-10" value="c-10"><label for="c-10"></label></li>
+                    <li><input type="checkbox" id="d-10" value="d-10"><label for="d-10"></label></li>
+                    <li><input type="checkbox" id="e-10" value="e-10"><label for="e-10"></label></li>
+                    <li><input type="checkbox" id="f-10" value="f-10"><label for="f-10"></label></li>
+                    <li><input type="checkbox" id="g-10" value="g-10"><label for="g-10"></label></li>
+                </ul>
+            </div>
+            <div class="a-row-container">
+                <ul class="row-11">
+                    <li>11th</li>
+                    <li><input type="checkbox" id="a-11" value="a-11"><label for="a-11"></label></li>
+                    <li><input type="checkbox" id="b-11" value="b-11"><label for="b-11"></label></li>
+                    <li><input type="checkbox" id="c-11" value="c-11"><label for="c-11"></label></li>
+                    <li><input type="checkbox" id="d-11" value="d-11"><label for="d-11"></label></li>
+                    <li><input type="checkbox" id="e-11" value="e-11"><label for="e-11"></label></li>
+                    <li><input type="checkbox" id="f-11" value="f-11"><label for="f-11"></label></li>
+                    <li><input type="checkbox" id="g-11" value="g-11"><label for="g-11"></label></li>
+                </ul>
+            </div>
+        </article>
+    </article>
+    
+    <div class="bt-group">
+        <a href="#" class="filling-bt">Fill it</a>
+        <a href="#" class="submit-bt">Submit</a>
+    </div>
+
+    <script src="__PUBLIC__/static/lib/main.js"></script>
+</body>
+</html>
