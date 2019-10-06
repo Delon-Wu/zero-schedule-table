@@ -96,7 +96,7 @@ class User extends Auth
             return json_encode(
                 [
                     'code' => '0001',
-                    'msg' => '该用户已存在'
+                    'msg' => '该用户已存在' 
                 ]
                 );
         }
