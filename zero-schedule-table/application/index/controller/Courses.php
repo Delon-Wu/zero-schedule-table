@@ -6,7 +6,7 @@ use think\Session;
 use think\Cookie;
 
 class Courses extends Auth{
-    protected $beforeActionList = ['isAuthed'];
+    protected $beforeActionList = ['isAuthed' =>['only'=>'submit']];
     public function submit(){
 
         $email = Session::get('email','/');
